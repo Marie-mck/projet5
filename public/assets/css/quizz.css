@@ -1,0 +1,20 @@
+body {
+    font-family: "calibri";
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+#page {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1 {
+    font-size: 30px;
+    left: 0;
+    width: 100%;
+    color: black;
+    
+}

@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+        <style>
+        
+        </style>
+{% endblock %}
+
+{% block body %}
+
+    <section class="introduction">
+            <div id="introduction">
+                <div class="imageBoxImg">
+                    <div class="image"><img src="{{ asset('assets/images/bambou5.jpg') }}" class="image" alt="bambou"/></div>
+                    <text class="imageBoxText">
+                        <h1>Votre prestataire <br/> QSE - RSE</h1>
+                    </text>
+                </div>
+                        
+            </div>
+            <div class="dessin1"></div>
+        
+        </section>
+    
+        <section class="skills">
+            <div class="text2">
+                <p class="textPresentation">bFZQREGFHSJYDTOBJKGBgoigbio</p>
+            </div>
+            <div class="homeContainer">
+                <div class="site_1">
+                    <figure>
+                        <img src="{{ asset('assets/images/quality1.jpg') }}" id="imageQualite" alt="imageQualite"/>
+                        <figcaption class="homeContainerFigCap">
+                            <h4>CONSEIL</br>ACCOMPAGNEMENT</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="site_1">	
+                    <figure>
+                        <img src="{{ asset('assets/images/secu.jpg') }}" id="imageQualite" alt="secu"/>
+                        <figcaption class="homeContainerFigCap">
+                            <h4>AUDIT</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="site_1">
+                    <figure>
+                        <img src="{{ asset('assets/images/rse1.jpg') }}" id="imageQualite" alt="rse1"/>
+                        <figcaption class="homeContainerFigCap">
+                            <h4>SENSIBILISATION</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillDetail">
+            <div class="qualityDetail">
+                <div class="picture">
+                    <img src="{{ asset('assets/images/qualite.jpg') }}" class="imageQSE" alt="imageQSE"/>
+                </div>
+
+                <div class="skillPres">
+                <div class="skillPresBox">
+                    <h4>QUALITE</h4>
+                    <p>hfrzgfquergthstrgu</p>
+                </div>
+                <div class="readmoreQualitySkill"><p><a class="read" href="{{ path('qualityPage') }}">En savoir plus ...</a></p></div>
+                </div>
+            </div>
+            <div class="securityDetail">
+                <div class="picture">
+                    <img src="{{ asset('assets/images/security.jpg') }}" class="imageQSE" alt="imageQSE"/>
+                </div>
+                <div class="skillPres">
+                <div class="skillPresBox">
+                    <h4>SECURITE</h4>
+                    <p>hfrzgfquergthstrgu</p>
+                    
+                </div>
+                <div class="readmoreQualitySkill"><p><a class="read" href="index.php?action=post&id=<?php echo $post->id()?>">En savoir plus ...</a></p></div>
+                </div>
+            </div>
+            <div class="rseDetail">
+                <div class="picture">
+                    <img src="{{ asset('assets/images/rse.jpg') }}" class="imageQSE" alt="rse"/>
+                </div>
+                <div class="skillPres">
+                <div class="skillPresBox">
+                    <h4>RSE / GASPILLAGE</h4>
+                    <p>hfrzgfquergthstrgu</p>
+                </div>
+                <div class="readmoreQualitySkill"><p><a class="read" href="index.php?action=post&id=<?php echo $post->id()?>">En savoir plus ...</a></p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dessinBox">
+            <div class="dessin"></div>
+        </section>
+
+        <section>
+            <div class="infoBox">
+                <div class="info1">
+                    <h4>QUIZZ</h4>
+                    <div class="liste"><div class="cube1"></div><a class="infoLink" href="{{ path('qualityQuizz') }}">Quizz qualité > </a></div>
+                    <div class="liste"><div class="cube2"></div><a class="infoLink" href="{{ path('securityQuizz') }}">Quizz securité -></a></div>
+                    <div class="liste"><div class="cube3"></div><a class="infoLink" href="{{ path('rseQuizz') }}">Quizz rse</a></div>
+                </div>
+                <div class="info2">
+                    <h4>SERVICES</h4>
+                    <div class="liste"><div class="cube1"></div><a class="infoLink" href="{{ path('qualityPage') }}">Qualité</a></div>
+                    <div class="liste"><div class="cube2"></div><a class="infoLink" href="{{ path('securityPage') }}">Securité</a></div>
+                    <div class="liste"><div class="cube3"></div><a class="infoLink" href="{{ path('rsePage') }}">RSE</a></div>
+                </div>
+                <div class="info3">
+                    <h4>accès vers</h4>
+                </div>
+            </div>
+
+        </section>
+
+
+{% endblock %}

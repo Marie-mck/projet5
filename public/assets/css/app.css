@@ -1,0 +1,1342 @@
+body {
+    font-family: "calibri";
+    margin: 0;
+    padding: 0;
+	background-color: #fff;
+}
+#page {
+    margin: 0;
+    padding: 0;
+}
+header {
+	top:0;
+}
+
+/* ------------------ Administration --------------------------------- */
+.connexionVisiteur {
+    padding: 4%;
+}
+.connexionAdministrateur {
+    padding: 0%;
+}
+.adminAccess {
+	width: 30%;
+	margin: auto;
+	list-style-type: none;
+	font-size: 17px;
+}
+
+/* ------------------ header --------------------------------- */
+header {
+    background-color: white;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+	padding-top: 0;
+	align-items: center;
+}
+.myLogo {
+    font-size: 25px;
+    color: #252525;
+    padding-left: 3%;
+    font-weight: bold;
+	padding-right: 20px;
+}
+.nameLogo {
+	display: flex;
+	padding-left: 3%;
+	text-align: center;
+	align-items: center;
+	font-size: 18px;
+}
+.menu {
+	padding-right: 3%;
+}
+nav ul {
+    list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+nav li {
+    padding: 3px 15px;
+}
+nav a {
+    font-size: 17px;
+    color: #252525;
+	text-decoration: none;
+	margin-right: 15px;
+}
+nav a:hover {
+    border-bottom: 2px solid rgb(111, 111, 204);
+}
+nav ul li ul {
+	display: none;
+} /* Rend le menu déroulant caché par défaut */
+nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+	z-index: 99999;
+	display: list-item !important;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: -10px;
+}
+nav ul li:hover ul li {
+	float: none;
+}
+.menu input.burger {
+	display: none;
+}
+#contenu {
+	padding-top: 3%;
+}
+.textDocImageQSE {
+	height: 225px;
+}
+.titleDocImageQSE {
+	position: relative;
+}
+#imageQualite {
+	height: 225px;
+	box-shadow: 18px 18px 0px #aaa;
+}
+.textImageQSE {
+    font-size: 30px;
+    text-align: center;
+}
+.textImageQSE h4 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+.readmoreDocImageQSE p {
+	margin: 0;
+}
+
+/* ------------ accueil / Home -----------*/
+
+.adminLink {
+	margin: 0;
+}
+#introduction {
+	text-align: center;
+	background-color: #444444;
+}
+.introduction {
+	background-color: #eaeaf27d;
+}
+.skills {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	background-color: #eaeaf27d;
+}
+.para {
+	text-align: center;
+}
+.image {
+    position: relative;
+    width: 100%;
+	height: 450px;
+	filter: opacity(90%);
+}
+.imageBoxText {
+	width: 17%;
+	border: 1px solid #eef4d7;
+	background-color: #dbddd2;
+	position: absolute;
+	font-size: 30px;
+	left: 0;
+	height: 325px;
+	border-top-right-radius: 80%;
+	border-bottom-right-radius: 80%;
+	border-radius: 50%;
+	top: 125px;
+}
+h1 {
+	font-size: 30px;
+    left: 0;
+    width: 100%;
+    color: black;
+	padding-top: 30%;
+}
+.imageBoxImg {
+	width: 100%;
+	position: relative;
+	background-color: #444444;
+}
+.site_1, .site_2 {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+figure {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+	box-shadow: 0px 0px 34px 0px rgba(107,107,107,0.5);
+}
+.homeContainerFigCap {
+	position: absolute;
+	width: 100%;
+	color: white;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4);
+	margin: 0;
+}
+.dessinBox {
+	background-color: #eaeaf27d;
+}
+h4, .presentation {
+	font-size: 18px;
+	margin-top: 5px;
+}
+.text2, .para {
+	text-align: center;
+	font-size: 20px;
+	padding: 2% 0%;
+}
+.administration {
+	padding-left: 2%;
+}
+.presentation {
+	margin: 0;
+	margin-bottom: 1%;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.textPresentation {
+	margin: 0;
+}
+.lastDoc {
+	margin: 1%;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+.homeContainer, .homeContainer2{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	padding: 0% 10%;
+	padding-bottom: 50px;
+}
+.titleDoc, .textDoc, .readmore {
+	margin: 0;
+	padding: 1%
+}
+.titleDoc {
+	text-align: center;
+}
+.pres, .picture {
+	text-align: center;
+}
+.textDoc {
+	height: 300px;
+}
+.qualitySkill {
+	display: flex;
+}
+.qualitySkill i {
+	margin-right: 20px;
+}
+h4 {
+	font-size: 25px;
+}
+.readmoreDoc p, .read {
+	margin: 0;
+	padding: 5%;
+	font-size: 16px;
+}
+.read {
+	margin: 0;
+	padding: 5% 10%;	
+	border-radius: 6px;
+	color:  #f63169;
+	width: 100px;
+	font-family: Calibri, Helvetica, Arial;
+	text-decoration: none;
+}
+.quality, .security, .rse {
+	width: 30%;
+}
+.pres {
+	border: 1px solid #333333;
+	border-radius: 12px;
+	box-shadow: 0px 0px 34px 0px rgba(107,107,107,0.5);
+	background-color: white;
+	opacity: 85%;
+}
+.readmoreDoc {
+	padding-bottom: 15px;
+}
+.skillDetail {
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	background-color: #eaeaf27d;
+	padding: 50px 45px;
+}
+.qualityDetail, .securityDetail, .rseDetail {
+	background-color: white;
+	display: flex;
+	margin: 0;
+	justify-content: space-around;
+	border: 2px solid black;
+	width: 550px;
+	border-radius: 6px;
+	height: 350px;
+}
+.imageQSE {
+    width: 60%;
+	height: 170px;
+	border-radius: 100px;
+	padding-top: 20px;
+}
+.picture, .skillPres {
+	width: 50%;
+}
+.skillPres {
+	padding: 20px;
+	text-align: center;
+}
+.skillPresBox {
+	height: 90%;
+	padding: 10px;
+}
+.skillPres p {
+	margin: 0;
+}
+.dessin {
+	width: 100%;
+	height: 20px;
+	background-color: #444444;
+	border-top-right-radius: 100%;
+}
+.dessin1 {
+	width: 100%;
+	height: 50px;
+	background-color: #444444;
+	margin: 0;
+	border-bottom-left-radius: 100%;
+}
+.infoBox {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+.info1, .info2, .info3 {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+}
+.cube1, .cube2, .cube3 {
+	width: 15px;
+	height: 15px;
+}
+.cube1 {
+	background-color: #acd2fb;
+}
+.cube2 {
+	background-color: #fedf2c;
+}
+.cube3 {
+	background-color: #6d635f;
+}
+.liste {
+	display: flex;
+	align-items: center;
+}
+.infoLink {
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+	font-size: 18px;
+}
+
+/*----------------------- page à propos -----------------*/
+.profil {
+	width: 90%;
+	margin: auto;
+}
+.containerParcours {
+    border:3px solid black;
+    text-align: center;
+    width: 80%;
+    margin: 3% 10%;
+}
+.containerParcours h5 {
+	
+}
+
+/*--------------services -----*/
+#servicesContainer {
+	background-color: #eaeaf27d;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.servicesContainer {
+	display: flex;
+	width: 85%;
+	justify-content: space-around;
+	margin: auto;
+}
+.qualityDetailServices, .securityDetailServices, .rseDetailServices {
+	display: flex;
+	flex-direction: column;
+}
+.service {
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+.presServicesTitle {
+	text-align: center;
+}
+.pictureServices {
+	text-align: center;
+}
+.imageQSEServices, .imageQSEServices1, .imageQSEServices2, .imageQSEServices3 {
+	height: 215px;
+	width: 100%;
+	border-right: 30px solid #a4ccd9;
+	border-bottom: 30px solid #bee0ec;
+}
+.imageQSEServices1 {
+	background-color: #acd2fb;
+}
+.imageQSEServices2 {
+	background-color: #fedf2c;
+}
+.imageQSEServices3 {
+	background-color: #6d635f;
+}
+.readServices p, .readmoreQualitySkill {
+	margin: 0;
+	padding-left: 50px;
+}
+.readServices {
+	padding: 10px;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #f63169;
+}
+.qualitySkillServices p {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	padding-left: 100px;
+}
+.skillPresServices {
+	height: 80%;
+	margin-top: 25px;
+	padding-left: 50px;
+	line-height: 30px;
+}
+.pictureServicesFig {
+	box-shadow: none;
+	border-right: 20px solid #757a7b;
+	border-bottom: 20px solid #757a7b;
+}
+figure .pictureServicesFig {
+	width: 90%;
+}
+figure .pictureServicesFigC {
+	position: absolute;
+	width: 90%;
+	color: white;
+	bottom: 0;
+	margin: 0;
+}
+h5 {
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	font-size: 18px;
+	font-weight: normal;
+}
+/*----------------------- Actualites -----------------*/
+.actuaList {
+	width: 90%;
+	margin: auto;
+	display: flex;
+}
+#actualites {
+	display: flex;
+	width: 75%;
+	padding-bottom: 85px;
+}
+.actualite {
+	width: 30%;
+	margin: auto;
+	box-shadow: 0px 0px 34px 0px rgba(107,107,107,0.5);
+}
+.imageActualiteTitle {
+	height: 200px;
+	width: 100%;
+}
+.imageActualite {
+	height: 200px;
+	width: 100%;
+}
+.actualitepres {
+	border: 1px solid black;
+}
+.actualiteTitle {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-around;
+	margin-bottom: 90px;
+	margin-top: 30px;
+	align-items: center;
+	text-align: center;
+}
+.listeActualite {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: auto;
+}
+.listeActualite2 {
+	display: flex;
+	margin-bottom: 25px;
+}
+.actualiteQualityLink {
+	height: 300px;
+	margin: auto;
+}
+.actualiteQualityLink ul {
+	list-style-type: none;
+	padding: 0;
+	border-radius: 3px;
+}
+.actualiteQualityLink li {
+	margin-bottom: 35px;
+}
+.actualiteQualityLink a {
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	background-color: rgb(229, 229, 229);
+	padding: 12px 30px 12px 30px;
+}
+.actualiteQualityLink a:hover, .actualiteQualityLink li:first-child a {
+    background-color: #63b7d6;;
+    box-shadow: 0px 2px #63b7d6;;
+	color: white;
+	border-radius: 3px;
+}
+#navLink, #navBtn {
+	display: flex;
+	white-space: nowrap;
+	margin-right: 1%;
+}
+.commentActua {
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+.listeActualite3 {
+	display: flex;
+	margin-right: 20px;
+}
+#containerActualites {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*---------Page quality/security/RSE------------*/
+
+#quality {
+	background-color: #eaeaf280;
+}
+.qualityLink {
+    padding-top: 90px;
+}
+.qualityLink ul {
+    justify-content: center;
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	border-radius: 3px;
+}
+.qualityLink a {
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	background-color: rgb(229, 229, 229);
+	padding: 12px 30px 12px 30px;
+}
+.qualityLink a:hover::after, .qualityLink li:first-child a::after {
+    font-size: 23px;
+    display: block;
+    position: absolute;
+    color: #63b7d6;
+    padding: 2px 0px 0px 35px;
+} 
+.qualityLink a:hover, .qualityLink li:first-child a {
+    background-color: #63b7d6;;
+    box-shadow: 0px 2px #63b7d6;;
+	color: white;
+	border-radius: 3px;
+}
+#navLink, #navBtn {
+	display: flex;
+	white-space: nowrap;
+	margin-right: 1%;
+}
+.para {
+	text-align: center;
+}
+.skillsQUality {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+	margin-top: 100px;
+}
+.presWhyQuality {
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+.administration {
+	padding-left: 2%;
+}
+.presentation {
+	margin: 0;
+	margin-bottom: 1%;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.textPresentation {
+	margin: 0;
+}
+.homeContainerQuality {
+    display: flex;
+    flex-direction: column;
+	margin: auto;
+	justify-content: space-around;
+	width: 70%;
+}
+.titleDoc, .textDoc, .readmore {
+	margin: 0;
+    padding: 1%
+}
+.titleDoc {
+	text-align: center;
+}
+.presWhy {
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+.quality, .security, .alert {
+	width: 30%;
+}
+h3 {
+    font-weight: 900;
+    color: rgb(22, 50, 64);
+    font-size: 20px;
+}
+.containerQualityHow_1, .containerQualityHow_2 {
+    width: 30%;
+}
+.containerQualityHow {
+    display: flex;
+    justify-content: space-between;
+}
+.textDoc p {
+    font-size: 16px;
+    padding: 8px
+}
+.containerQuality, .containerQualityHow {
+    margin-bottom: 20px;
+    border-top: 2px solid rgb(22, 50, 64);
+    padding-top: 15px;
+}
+.containerQualityHow_1, .containerQualityHow_2 {
+    width: 30%;
+}
+.textDoc {
+	height: 300px;
+}
+.containerQualityHow {
+    display: flex;
+    justify-content: space-between;
+}
+.readmoreDoc {
+	padding-bottom: 15px;
+}
+.containerQuality p, .quizzQualityPageLink {
+    margin: 0;
+    margin-bottom: 8px;
+    padding-left: 30px;
+    font-size: 18px;
+	text-decoration: none;
+}
+.quizzQualityPageLink {
+    color: #f63169;
+}
+.listePage {
+	display: flex;
+	align-items: center;
+}
+h3 {
+	padding-left: 10px;
+}
+
+/*-----------------QUIZZ-----------*/
+#quizz {
+	background-color: #eaeaf2;
+	background-color: #eaeaf27d;
+}
+#quizzTitle {
+	padding-bottom: 20px;
+	text-align: center;
+}
+.imageQuizz {
+	height: 100px;
+	width: 100%;
+}
+form {
+	padding: 0;
+	margin: 0;
+	width: 70%;
+	margin: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.quiz-question {
+    padding: 2rem 0;
+    clear: both;
+    display: flex;
+    background: #fff;
+	border-top: 1px solid #b3b5ab;
+}
+.quiz-numero {
+    margin: 1.5rem 4rem 0 3rem;
+    height: 4em;
+    width: 4em;
+    text-align: center;
+    background: #b3b5ab;
+    font-size: 20px;
+    color: #fff;
+    line-height: 4em;
+    border-radius: 30%;
+    font-family: Merriweather,serif;
+}
+.quiz-txt {
+    flex: 1;
+    padding-right: 1rem;
+}
+.quiz-intitule {
+    font-weight: 700;
+    margin: 0 0 1rem;
+    margin-bottom: 1rem;
+}
+.quiz-choix ul li {
+    list-style-type: none;
+    background: 0 0;
+    list-style-image: none;
+}
+.quizzArea {
+	width: 100%;
+	min-height: 20px;
+}
+.pseudoQuizzVisitor {
+	margin: 0 0 0 2%;
+	width: 94%;
+	border: solid 1px silver;
+	font-family: monospace;
+	padding-right: 1rem;
+}
+.quizzDeco {
+	margin: auto;
+	margin-top: 80px;
+}
+.quizzTable {
+	border-collapse: collapse;
+}
+td {
+	border-collapse: collapse;
+}
+.marronV {
+	width: 20px;
+	background-color: #6d635f;
+}
+.line1, .line3, .line5 {
+	height: 20px;
+	width: 100%;
+	background-color: #6d635f;
+}
+.line2, .line4 {
+	height: 100px;
+}
+.test {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.jaune, .bleu {
+	width: 100px;
+}
+.jaune, .jaune2 {
+	background-color: #fedf2c;
+}
+.bleu2, .jaune2 {
+	width: 165px;
+}
+.bleu, .bleu2 {
+	background-color: #acd2fb;
+}
+.marron {
+	background-color: #6d635f;
+}
+
+/*----------------------- page connexion -----------------*/
+#registration, #connect {
+	background-color: #eaeaf2;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#connexion, #inscription {
+	width: 60%;
+	margin: auto;
+	background-color: white;
+	margin-top: 130px;
+	margin-bottom: 130px;
+	border-radius: 6px;
+}
+.tableConnexion, .tableInscription {
+	margin: auto;
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+.tableConnexion td, .tableInscription td {
+	border: none;
+	padding: 20px 0px;
+}
+.tableConnexion tr {
+	padding-bottom: 10px;
+}
+.connectionTitle, .inscriptionTitle {
+	padding-top: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#pseudo, #motDePasse, #email {
+	border: none;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+	width: 90%;
+}
+#inscriptionBtn, .inscriptionBtn, #deconnexion_Btn, .deconnexionBtn, #connexion_Btn, .connexionBtn, #connexionBtn, .inscription_Btn, #inscription_Btn, .welcome {
+    font-size: 16px;
+    text-align: center;
+	border: 2px solid #63b7d6;
+	border-radius: 6px 6px 6px 6px;
+    background-color: #63b7d6;
+    padding: 8px;
+	color: white;
+	white-space: nowrap;
+	margin-right: 2%;
+	font-family: 'Open Sans', sans-serif, arial, 'comfortaa', cursive;
+}
+.welcome {
+	background-color: #63b7d6;
+	border: 2px solid #63b7d6;
+}
+#inscription_Btn, .inscriptionBtn {
+	background-color: #63b7d6;
+	border: 2px solid #63b7d6;
+}
+.pageAdminTitle {
+	margin-top: 50px;
+	font-size: 25px;
+}
+.connectionPageBtn {
+	text-align: center;
+}
+.inscriptionBtn, .deconnexionBtn, .connexionBtn {
+	color: white;
+}
+.sup {
+	color: #252525;
+}
+.imageLogo {
+	width: 80px;
+	margin-top: 2px;
+}
+.listeConnexion {
+	display: flex;
+	justify-content: space-between;
+	width: 8%;
+	margin: auto;
+}
+/*----------------------- page inscription -----------------*/
+
+#inscriptionBtn {
+	font-size: 15px;
+	border: 1px solid #444444;
+	border-radius: 6px 6px 6px 6px;
+	background-color: #444444;
+	padding: 12px 30px;
+}
+#identifiant, #email, #motDePasse {
+	border: none;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+	width: 90%;
+}
+#identifiantLabel, #emailLabel, #motDePasseLabel {
+	border: none;
+	font-size: 18px;
+	width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------ACCUEIL chapters--------------------- */
+
+
+
+
+/*----------------------- page Admin ajout Chapter -----------------*/
+
+
+
+/*----------------------- page Voir plus -----------------*/
+
+
+/*----------------------- page ajout comment -----------------*/
+
+
+/*----------------------- page Admi (update, delete) -----------------*/
+
+
+
+
+
+
+
+
+/*----------------------- footer -----------------*/
+#footer {
+	width: 100%;
+	background-color: #444444;
+}
+.footerContainer {
+	padding: 20px 0px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif, arial, 'comfortaa', cursive;
+	text-align: center;
+	
+}
+.footerCopy {
+	text-align: center;
+	font-size: 12px;
+}
+.footerNav li, .logos, .nav {
+	padding: 3px 15px;
+	color: white;
+}
+.footerNav ul li a {
+	color: white;
+}
+.footerInfo {
+	display: flex;
+	align-items: center;
+}
+.footerNav {
+	margin-left: 2%;
+}
+.logos {
+	margin-left: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+	/*ecran tablette*/
+	@media all and (min-width: 1024px) and (max-width: 1124px) {
+		.text {
+			padding-top:6%;
+			left: 7%;
+			width: 70%;
+			font-size: 20px;
+		}
+
+	}
+	/*ecran tablette*/
+	@media all and (min-width: 769px) and (max-width: 1024px) {
+		.text {
+			padding-top:2%;
+			left: 3%;
+			width: 50%;
+			font-size: 25px;
+			margin: 0px auto;
+		}
+		
+
+		footer {
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		
+	}
+
+/*ecran smartphone*/
+	@media all and (max-width: 768px) {
+
+		header {
+			padding: 10px 0px 10px 0px;
+			display: block;
+			height: 40px;
+		}
+		.myLogo {
+			padding-left: 0%;
+		}
+		.imageLogo {
+			width: 52px;
+			margin-top: 0px;
+		}
+		.menu {
+			width: 100%;
+		}
+		.headNav {
+			display: block;
+		}
+		.adminLink {
+			margin: 0;
+			padding: 0;
+		}
+		#logo img {
+			width: 170px;
+			height: 42px;
+			padding-left: 25px;
+		}
+		nav ul {
+			display: flex;
+			flex-direction: column;
+			line-height: 0.9;
+			width: 55%;
+			padding: 0px 20px;
+		}
+		.menu nav {
+			background-color: white;
+			overflow: hidden; /*cache le menu qd pas ouvert*/
+			height: 0;
+		}
+		nav li {
+			padding: 2px 40px;
+		}
+		nav a {
+			border-bottom: 1px solid #f4f2f1;
+			display: block;
+			padding: 12px 40px 12px 15px;
+			font-size: 17px;
+			font-weight: 400;
+		}
+		.navBtn {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+		}
+		.subMenuNav ul {
+			padding-top: 15px;
+		}
+		nav ul li ul {
+			display: block;
+		}
+		.subMenuNav {
+			position: static;
+			margin: 0;
+			white-space: nowrap;
+			line-height: 28px;
+		}
+		.subMenuNav ul{
+			display: block;
+			position: static;
+			margin: 0;
+			padding: 0;
+			margin-left: 15px;
+			border-radius: 0 0 .25rem .25rem;
+		}
+		.subMenuNav li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			height: 28px;
+		}
+		.subMenuNav:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+			display: list-item !important;
+			position: static;
+			margin-top: 15px;
+		}
+		h1 {
+			width: 60%;
+			margin: auto;
+		}
+		#navLink, #navBtn {
+			display: flex;
+			flex-direction: column;
+			white-space: normal;
+			margin-right: 1%;
+		}
+		
+	/*Menu buger*/
+		.menu input.burger {
+			display: block;
+		}
+		.menu .burger {
+			-webkit-appearance: none; /*apparence du menu */
+			cursor: pointer;
+			font-size: 26px;
+			line-height: 40px;
+			position: absolute;
+			top: 6px;
+			right: 20px;
+		}
+		.menu .burger:before {
+			content:'\f0c9';
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+		}
+		.menu .burger:checked:before {
+			content:'\f00d';
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+		}
+		.menu .burger:checked + nav {
+			height: calc(100vh - 60px);
+		}
+
+		/*---home---*/
+		.image {
+			height: 250px;
+		}
+		.imageBoxText {
+			width: 60%;
+			height: 125px;
+			border-radius: 45%;
+			top: 85px;
+		}
+		h1 {
+			padding-top: 4%;
+		}
+		h4 {
+			font-size: 20px;
+		}
+		.dessin1 {
+			height: 22px;
+		}
+		.site_1, .site_2 {
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.homeContainer {
+			flex-direction: column;
+			width: auto;
+			padding: 0;
+			margin: 0;
+		}
+		#imageQualite {
+			height: 170px;
+			box-shadow: 18px 18px 0px #aaa;
+		}
+		.imageQSE {
+			width: 60%;
+			height: auto;
+			border-radius: 100px;
+			padding-top: 20px;
+		}
+		figure {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			box-shadow: none;
+			margin: auto;
+			margin-bottom: 50px;
+		}
+		.homeContainerFigCap {
+			width: 74%;
+		}
+		.skills {
+			padding-top: 15px;
+		}
+		.skillDetail {
+			flex-direction: column;
+		}
+		.qualityDetail, .securityDetail, .rseDetail {
+			width: 90%;
+			margin: auto;
+			height: auto;
+			margin-bottom: 15px;
+			flex-direction: column;
+		}
+		.readServices p, .readmoreQualitySkill {
+			margin: 0;
+			padding: 0;
+		}
+		.read {
+			margin: 0;
+			padding: 0;
+		}
+		.infoBox {
+			flex-direction: column;
+		}
+		.info1, .info2, .info3 {
+			width: 60%;
+			margin: auto;
+			padding-bottom: 20px;
+		}
+		.imageBoxImg {
+			height: auto;
+		}
+
+		/*---page---*/
+		.presWhyQuality {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2%;
+			justify-content: space-around;
+		}
+		.quality, .security, .alert {
+			width: 100%;
+		}
+		.textDoc p {
+			font-size: 16px;
+			padding: 3px;
+		}
+		.textDoc {
+			height: auto;
+		}
+		.qualityLink {
+			padding-top: 20px;
+		}
+		.qualityLink ul {
+			justify-content: center;
+			flex-direction: column;
+			list-style-type: none;
+			display: flex;
+			padding: 0;
+			border-radius: 3px;
+		}
+		.qualityLink a:hover::after, .qualityLink li:first-child a::after {
+			font-size: 20px;
+			display: block;
+			position: absolute;
+			padding: 2px 0px 0px 35px;
+		}
+		.qualityLink a {
+			text-decoration: none;
+			color: black;
+			font-size: 17px;
+			background-color: rgb(229, 229, 229);
+			padding: 5px 10px 5px 10px;
+		}
+
+		/*----Actualites----*/
+		#actualites {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			padding-bottom: 85px;
+		}
+		.actuaList {
+			width: 90%;
+			margin: auto;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.actualite {
+			width: 90%;
+			margin: auto;
+			margin-bottom: 50px;
+			box-shadow: 0px 0px 34px 0px rgba(107,107,107,0.5);
+		}
+		.listeActualite2 {
+			display: none;
+		}
+		.actualiteTitle {
+			margin-bottom: 25px;
+		}
+		.actualiteQualityLink {
+			height: auto;
+			margin: auto;
+		}
+		.actualiteQualityLink ul {
+			display: flex;
+		}
+		.actualiteQualityLink a {
+			padding: 10px 18px 10px 18px;
+		}
+		.actualiteQualityLink a:hover, .actualiteQualityLink li:first-child a {
+			background-color: rgb(229, 229, 229);
+			box-shadow: none;
+			color: black;
+			border-radius: 3px;
+		}
+		/*----Services----*/
+		.servicesContainer {
+			display: flex;
+			flex-direction: column;
+			width: 85%;
+			justify-content: space-around;
+			margin: auto;
+		}
+
+		/*----inscription - Connexion  ----*/
+		.listeConnexion {
+			width: 32%;
+		}
+		#connexion, #inscription {
+			width: 80%;
+		}
+		.tableConnexion td, .tableInscription td {
+			border: none;
+			margin: 0;
+			padding: 20px 0px;
+			display: flex;
+		}
+		.tableInscription td {
+			padding: 10px 0px;
+		}
+		#identifiant, #email, #motDePasse {
+			border: 1px solid black;
+		}
+		#pseudo, #motDePasse {
+			margin-bottom: 20px;
+		}
+}

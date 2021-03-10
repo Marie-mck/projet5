@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+        <style>
+        
+        </style>
+{% endblock %}
+    
+
+{% block body %}
+
+    <div id="servicesContainer">
+
+        <div class="servicesContainer">
+
+            <div class="qualityDetailServices">
+                <div class="pictureServices">
+                    <figure class="pictureServicesFig">
+                        <img src="{{ asset('assets/images/quality1.jpg') }}" class="imageQSEServices" alt="imageQSE"/>
+                        <figcaption class="pictureServicesFigC">
+                            <h4>QUALITE</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="skillPresServices">
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>PMS - HACCP, hygiène</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Audit et conseils</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Certification</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Réclamations, non conformités</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Contaminants</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Suivi et gestion des fournisseurs</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Contrôles et analyses</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Production, stockage</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Réglementations</h5></div>
+                    <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Veille</h5></div>
+                    </div>
+                <div class="readmoreQualitySkill"><p><a class="readServices" href="{{ path('qualityPage') }}">En savoir plus ...</a></p></div>
+            </div>
+            <div class="securityDetailServices">
+                <div class="pictureServices">
+                    <figure class="pictureServicesFig">
+                        <img src="{{ asset('assets/images/secu.jpg') }}" class="imageQSEServices" alt="imageQSE"/>
+                        <figcaption class="pictureServicesFigC">
+                            <h4>SECURITE</h4>
+                        </figcaption>
+                    </figure>	
+                </div>
+                <div class="skillPresServices">
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Bonnes pratiques</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Audit et conseils</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Référentiels</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>xxxxxx</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>xxxxxx</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Reporting</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Réglementations</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Veille</h5></div>
+                </div>
+                <div class="readmoreQualitySkill"><p><a class="readServices"Services href="index.php?action=post&id=<?php echo $post->id()?>">En savoir plus ...</a></p></div>
+            </div>
+            <div class="rseDetailServices">
+                <div class="pictureServices">
+                    <figure class="pictureServicesFig">
+                        <img src="{{ asset('assets/images/rse1.jpg') }}" class="imageQSEServices" alt="imageQSE"/>
+                        <figcaption class="pictureServicesFigC">
+                            <h4>RSE / GASPILLAGE</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="skillPresServices">
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>xxxxxx</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Conseils</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>xxxxxx</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>xxxxxx</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Reporting</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Normes, référentiels</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Réglementations</h5></div>
+                <div class="listePage"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><h5>Veille</h5></div>
+                </div>
+                <div class="readmoreQualitySkill"><p><a class="readServices" href="index.php?action=post&id=<?php echo $post->id()?>">En savoir plus ...</a></p></div>
+            </div>
+
+    </div>
+{% endblock %}

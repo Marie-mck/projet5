@@ -1,0 +1,786 @@
+body {
+    font-family: "calibri";
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+#page {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*test color*/
+.testcolor1, .testcolor2, .testcolor3 {
+	display: flex;
+	height: 150px;
+}
+.test2 {
+	background-color:#4d4c4c;
+	width: 100px;
+}
+.test3 {
+	background-color: #333333;
+	width: 100px;
+}
+.test4 {
+	background-color:#63b7d6;
+	width: 100px;
+}
+.test6 {
+	background-color: #2E3841;
+	width: 100px;
+}
+.test10 {
+	background-color: #444444;
+	width: 100px;
+}
+.test11 {
+	background-color: #33586e;
+	width: 100px;
+}
+.test13 {
+	background-color: gray;
+	width: 100px;
+}
+.test14 {
+	background-color: #0D2C38;
+	width: 100px;
+}
+.test15 {
+	background-color: #514F4D;
+	width: 100px;
+}
+.test16 {
+	background-color: #93928E;
+	width: 100px;
+}
+.test18 {
+	background-color: rgb(79, 91, 91);
+	width: 100px;
+}
+.test19 {
+	background-color:  rgb(22, 50, 64);
+	width: 100px;
+}
+.test20 {
+	background-color:  rgb(100, 107, 113);
+	width: 100px;
+}
+.test22 {
+	background-color:  rgb(85, 86, 81);
+	width: 100px;
+}
+.test23 {
+	background-color:  rgb(127, 127, 125);
+	width: 100px;
+}
+.test24 {
+	background-color:  rgb(12, 40, 54);
+	width: 100px;
+}
+.test26 {
+	background-color:  rgb(105, 106, 101);
+	width: 100px;
+}
+.test27 {
+	background-color:  rgb(100, 111, 106);
+	width: 100px;
+}
+/* ------------------ Administration --------------------------------- */
+.connexionVisiteur {
+    padding: 4%;
+}
+.connexionAdministrateur {
+    padding: 0%;
+}
+.adminAccess {
+	width: 30%;
+	margin: auto;
+	list-style-type: none;
+	font-size: 18px;
+}
+
+/* ------------------ header --------------------------------- */
+header {
+    background-color: white;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+	padding-top: 0;
+}
+.myName {
+    font-size: 25px;
+    color: #252525;
+    padding-left: 3%;
+    font-weight: bold;
+}
+.menu {
+	padding-right: 3%;
+}
+nav ul {
+    list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+nav li {
+    padding: 3px 15px;
+}
+nav a {
+    font-size:18px;
+    color: #252525;
+	text-decoration: none;
+	margin-right: 15px;
+}
+nav a:hover {
+    border-bottom: 2px solid rgb(111, 111, 204);
+	
+}
+nav ul li ul {
+	display:none;
+} /* Rend le menu déroulant caché par défaut */
+nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+	z-index:99999;
+	display:list-item !important;
+	position:absolute;
+	margin-top:5px;
+	margin-left:-10px;
+}
+nav ul li:hover ul li {
+	float:none;
+}
+.menu input.burger {
+	display: none;
+}
+#contenu {
+	padding-top: 3%;
+}
+
+
+
+
+/* ------------ accueil -----------*/
+h1 {
+	color: white;
+	font-size: 45px;
+}
+
+
+.qualityLink ul {
+    justify-content: center;
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	border-radius: 3px;
+}
+.qualityLink a {
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	background-color: rgb(229, 229, 229);
+	padding: 12px 30px 12px 30px;
+}
+.qualityLink a:hover::after, .qualityLink li:first-child a::after {
+    content: '\f0d7';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 23px;
+    display: block;
+    position: absolute;
+    color: #63b7d6;
+    padding: 2px 0px 0px 35px;
+} 
+.qualityLink a:hover, .qualityLink li:first-child a {
+    background-color: #63b7d6;;
+    box-shadow: 0px 2px #63b7d6;;
+	color: white;
+	border-radius: 3px;
+}
+.qualityLink a {
+    color: black;
+    font-size: 17px;
+}
+.qualityLink {
+    margin-bottom: 100px;
+}
+#navLink, #navBtn {
+	display: flex;
+	white-space: nowrap;
+	margin-right: 1%;
+}
+/* ------------------ACCUEIL chapters--------------------- */
+.adminLink {
+	margin: 0;
+}
+#introduction {
+	text-align: center;
+}
+#skills {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 2%;
+	text-transform: uppercase;
+	color:white;
+}
+.text {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    color: 252525;
+}
+.para {
+	text-align: center;
+}
+.skillsQUality {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.image {
+    position: relative;
+    width: 100%;
+	height:650px;
+}
+.text2, .para {
+	text-align: center;
+	font-size: 20px;
+	margin: 2% 0%;
+}
+.presWhyQuality {
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+.administration {
+	padding-left: 2%;
+}
+.presentation {
+	margin: 0;
+	margin-bottom: 1%;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.textPresentation {
+	margin: 0;
+}
+
+.homeContainerQuality {
+    display: flex;
+    flex-direction: column;
+	margin: auto;
+	justify-content: space-around;
+	width: 70%;
+
+}
+.titleDoc, .textDoc, .readmore {
+	margin: 0;
+    padding: 1%
+}
+.titleDoc {
+	
+	text-align: center;
+}
+.presWhy {
+    
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+.textDoc {
+    height: 300px;
+    
+    
+}
+.readmoreDoc p, .read {
+	margin: 0;
+	padding: 5%;
+	color: white;
+}
+.read {
+	margin: 0;
+	padding: 5% 10%;
+	color: white;
+	background-color: #33586e;
+	border-radius: 6px;
+}
+.quality, .security, .alert {
+	width: 30%;
+	
+}
+h3 {
+    font-weight: 900;
+    color: rgb(22, 50, 64);
+    font-size: 20px;
+}
+.quiz {
+    border-top: 2px solid rgb(22, 50, 64);
+    padding-top: 15px;
+}
+p {
+    margin: 0;
+    margin-bottom: 8px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.textDoc p {
+    font-size: 16px;
+    padding: 8px
+}
+.containerQuality, .containerQualityHow {
+    margin-bottom: 20px;
+    border-top: 2px solid rgb(22, 50, 64);
+    padding-top: 15px;
+}
+.containerQualityHow_1, .containerQualityHow_2 {
+    width: 30%;
+    
+}
+
+.containerQualityHow {
+    display: flex;
+    justify-content: space-between;
+}
+.readmoreDoc {
+	padding-bottom: 15px;
+}
+.skillDetail {
+	margin: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.qualityDetail, .securityDetail, .rseDetail {
+	border: 2px solid black;
+	display: flex;
+	margin-bottom: 3%;
+	justify-content: space-around;
+}
+.image {
+    width: 100%;
+	height:150px;
+}
+.picture, .skillPres {
+	width: 50%;
+}
+.skillPres {
+	padding: 1%;
+	text-align: center;
+}
+/*----------------------- page Admin ajout Chapter -----------------*/
+
+.addChapter {
+	height: 350px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 2%;
+}
+#mytextarea {
+	height: 250px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 2%;
+}
+/*----------------------- page Voir plus -----------------*/
+
+.voirPlusChapter {
+	width: 60%;
+	margin: auto;
+	height: auto;
+	text-align: justify;
+}
+#commentList {
+	margin-bottom: 5%;
+	padding: 2% 5%;
+	background-color: #c0c7c7;
+}
+.containerComment {
+	display: flex;
+	flex-direction: column;
+	border: thick double #33586e;
+	margin: 12px 0px;
+}
+.containerComment p {
+	padding: 10px 30px;
+	margin: 0;
+}
+.commentTitle {
+	font-size: 18px;
+}
+.addCommentBtn {
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid #4d4c4c;
+	width: 25%;
+	background-color #4d4c4c;
+	padding: 10px;
+	color: white;
+	margin-top: 20px;
+}
+.addCommentLink {
+	text-align: center;
+	margin: 40px 0px;
+}
+.newsdisplay {
+	padding: 2% 5%;
+	color: #33586e;
+}
+.titleVoirPlus {
+	font-size: 30px;
+	text-align: center;
+	color: #252525;
+}
+.authorTitle, .titleCommentList {
+	font-size: 20px;
+}
+.chaptersAccessBtn {
+	display: flex;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+}
+.button {
+	background-color:#4d4c4c;
+	color: #fff;
+	padding: 15px;
+	border: transparent;
+	border-radius: 6px 6px 6px 6px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font: 400 11px system-ui;
+}
+.newsdisplay {
+	text-align: justify;
+}
+.chapterAccessList {
+	margin-left: 2%;
+}
+.addCommentTitle{
+	padding-left: 2%;
+}
+.signalerBouton {
+	font-size: 15px;
+	text-align: center;
+	border: 2px solid #33586e;
+	width: 35%;
+	background-color: #4d4c4c;
+	padding: 10px;
+	color: white;
+	margin: 1% 60%;
+
+}
+#signalerBouton a {
+	color: white;
+}
+
+/*----------------------- page ajout comment -----------------*/
+
+.addCommentPage {
+	width: 60%;
+	margin: auto;
+	height: auto;
+	text-align: justify;
+}
+.addCommentTitle {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.addCommentForm {
+	margin: 3% 18%;
+	width: auto;
+}
+
+#authorComment, #commentaire {
+	margin-bottom: 10px;
+	width: 100%;
+}
+#commentaire {
+	height: 200px;
+}
+.commentBtn{
+	background-color: #4d4c4c;
+    color: #fff;
+    padding: 10px;
+    border: transparent;
+    border-radius: 6px 6px 6px 6px;
+    text-transform: uppercase;
+	cursor: pointer;
+	margin-bottom: 3%;
+}
+
+
+/*----------------------- page Admi (update, delete) -----------------*/
+#adminPageInfo {
+	margin: auto;
+	width: 80%;
+}
+.tableChapters, .tableComments, .tableUsers, .tableCommentsSignales {
+	margin: auto;
+}
+th {
+	background-color: #33586e;
+	font-size: 20px;
+}
+th, td {
+	font-size: 14px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 10px;
+	color: #252525;
+}
+.chapter {
+	width: 50%;
+}
+.updateComment {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 2%;
+}
+.updateCommentTitle {
+	margin-top: 3%;
+}
+/*----------------------- page à propos -----------------*/
+#author_pres {
+    border:3px solid rgb(92, 173, 211);
+    text-align: center;
+    width: 80%;
+    margin: 3% 10%;
+}
+/*----------------------- page connexion -----------------*/
+#connexion, #inscription {
+	width: 60%;
+	margin: auto;
+	background-color: white;
+}
+.tableConnexion, .tableInscription {
+	margin: auto;
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+.tableConnexion td, .tableInscription td {
+	border: none;
+	padding: 20px 0px;
+}
+.tableConnexion tr {
+	padding-bottom: 10px;
+}
+.connectionTitle, .inscriptionTitle {
+	padding-top: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 60px 0px;
+}
+#pseudo, #motDePasse, #email {
+	border: none;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+	width: 90%;
+}
+#inscriptionBtn, #deconnexion_Btn, #connexion_Btn, #connexionBtn, .inscription_Btn, #inscription_Btn, .welcome {
+    font-size: 18px;
+    text-align: center;
+	border: 2px solid rgb(22, 50, 64);
+	border-radius: 6px 6px 6px 6px;
+    background-color: rgb(22, 50, 64);
+    padding: 8px;
+	color: white;
+	white-space: nowrap;
+	margin-right: 2%;
+}
+#inscription_Btn {
+	background-color: #33586e;
+	border: 2px solid #33586e;
+}
+#deconnexion_Btn {
+	background-color:#33586e;
+	border: 2px solid #33586e;
+}
+.pageAdminTitle {
+	margin-top: 50px;
+	font-size: 25px;
+}
+.connectionPageBtn {
+	text-align: center;
+}
+.inscriptionBtn, .deconnexionBtn, .connexionBtn {
+	color: white;
+}
+.sup {
+	color: #252525;
+}
+/*----------------------- page inscription -----------------*/
+
+#inscriptionBtn {
+	font-size: 15px;
+	border: 1px solid #444444;
+	border-radius: 6px 6px 6px 6px;
+	background-color: #444444;
+	padding: 12px 30px;
+}
+#identifiant, #email, #motDePasse {
+	border: none;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+	width: 90%;
+}
+#identifiantLabel, #emailLabel, #motDePasseLabel {
+	border: none;
+	font-size: 18px;
+	width: 90%;
+}
+
+/*----------------------- footer -----------------*/
+#footer {
+	width: 100%;
+	background-color:  rgb(22, 50, 64);
+}
+.footerContainer {
+	padding: 20px 0px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: arial, 'comfortaa', cursive;
+	text-align: center;
+}
+.footerCopy {
+	text-align: center;
+	font-size: 12px;
+}
+.footerNav li, .logos, .nav {
+	padding: 3px 15px;
+	color: white;
+}
+.footerNav ul li a {
+	color: white;
+}
+.footerInfo {
+	display: flex;
+	align-items: center;
+}
+.footerNav {
+	margin-left: 2%;
+}
+.logos {
+	margin-left: 35%;
+}
+
+	/*ecran tablette*/
+	@media all and (min-width: 1024px) and (max-width: 1124px) {
+		.text {
+			padding-top:6%;
+			left: 7%;
+			width: 70%;
+			font-size: 20px;
+		}
+
+	}
+	/*ecran tablette*/
+	@media all and (min-width: 769px) and (max-width: 1024px) {
+		.text {
+			padding-top:2%;
+			left: 3%;
+			width: 50%;
+			font-size: 25px;
+			margin: 0px auto;
+		}
+		
+
+		footer {
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		
+	}
+
+/*ecran smart*/
+	@media all and (max-width: 768px) {
+		header {
+			padding: 10px 0px 10px 0px;
+			display: block;
+			height: 40px;
+		}
+		nav ul {
+			display: block;
+			line-height:2.2;
+			width: 90%;
+			padding: 0px 20px;
+		}
+		.menu nav {
+			background-color: white;
+			overflow: hidden; /*cache le menu qd pas ouvert*/
+			height:0;
+		}
+		nav li {
+			padding: 2px 40px;
+		}
+	/*Menu buger*/
+		#contenu {
+			padding-top: 8%;
+		}
+		header {
+			display: block;
+			height: 55px;
+		}
+		.menu input.burger {
+			display: block;
+			vertical-align:text-bottom;
+		}
+		.menu .burger {
+			-webkit-appearance:none; /*apparence du menu */
+			cursor:pointer;
+			font-size:26px;
+			line-height:40px;
+			position:absolute;
+			top:6px;
+			right:20px;
+		}
+		.menu .burger:before {
+			content:'\f0c9';
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+		}
+		.menu .burger:checked:before {
+			content:'\f00d';
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+		}
+		.menu .burger:checked + nav {
+			height:calc(28vh - 60px);
+		}
+		.voirPlusChapter {
+			width: 75%;
+		}
+		.addCommentBtn {
+			font-size: 18px;
+		}
+		.addCommentPage {
+			width: 80%;
+		}
+		#commentaire, #authorComment {
+			width: 100%;
+		}
+		.addCommentForm {
+			margin: 0;
+			width: auto;
+		}
+
+		.tableConnexion td, .tableInscription td {
+			padding: 0;
+		}
+		#signalerBouton {
+			width: 100%;
+			margin: 0%;
+		}
+}

@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    {{parent()}}
+        <style>
+        
+        </style>
+{% endblock %}
+
+{% block body %}
+    
+    <section>
+        <div class="imageActualiteTitle"><img src="{{ asset('assets/images/bambou5.jpg') }}" class="imageActualiteTitle" alt="bambou"/></div>
+        <div class="dessin1"></div>
+    </section>
+
+    <div id="containerActualites">
+    
+        <section class="actualiteTitle">
+            <div id="actualiteIntroduction">
+                    <h2 id="lastChaptersTitle">ACTUALITES</h2>
+                    <div class="listeActualite"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div></div></br>
+            </div>
+        </section>
+
+        <section class="actuaList">
+            <div id="actualites">
+            
+                <div class="actualite">
+                    <div class="pictureActualite">
+                        <img src="{{ asset('assets/images/dossier1.jpg') }}" class="imageActualite" alt="imageActualite"/>
+                    </div>
+                    <div class="actualitepres">
+                        <div class="actualitetitleDoc">
+                            <h4><em>publier le <?php echo $post->dateAjout(); ?></em></h4>
+                        </div>
+                        <div class="actualitetextDoc">
+                            <p class="actualiteText">huqfgerghtrbntrsbrgt</p>
+                        </div>
+                        <div class="actualiteReadmore"><p><a class="read" href="index.php?action=post&id=<?php echo $post->id()?>">Voir Plus ...</a></p></div>
+                    </div>
+                </div>
+
+                <div class="actualite">
+                    <div class="pictureActualite">
+                        <img src="{{ asset('assets/images/dossier1.jpg') }}" class="imageActualite" alt="imageActualite"/>
+                    </div>
+                    <div class="actualitepres">
+                        <div class="actualitetitleDoc">
+                            <h4><em>publier le <?php echo $post->dateAjout(); ?></em></h4>
+                        </div>
+                        <div class="actualitetextDoc">
+                            <p class="actualiteText">huqfgerghtrbntrsbrgt</p>
+                        </div>
+                        <div class="actualiteReadmore"><p><a class="read" href="index.php?action=post&id=<?php echo $post->id()?>">Voir Plus ...</a></p></div>
+                    </div>
+                </div>
+
+                <div class="actualite">
+                    <div class="pictureActualite">
+                        <img src="{{ asset('assets/images/dossier1.jpg') }}" class="imageActualite" alt="imageActualite"/>
+                    </div>
+                    <div class="actualitepres">
+                        <div class="actualitetitleDoc">
+                            <h4><em>publier le <?php echo $post->dateAjout(); ?></em></h4>
+                        </div>
+                        <div class="actualitetextDoc">
+                            <p class="actualiteText">huqfgerghtrbntrsbrgt</p>
+                        </div>
+                        <div class="actualiteReadmore"><p><a class="read" href="index.php?action=post&id=<?php echo $post->id()?>">Voir Plus ...</a></p></div>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="actualiteQualityLink">
+                    <div class="listeActualite2"><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div></div>
+                    <ul>
+                        <li><a href="#who" id="works">Actualités</a></li>
+                        <li><a href="#What">Dossiers</a></li>
+                        <li><a href="#Why">Les plus récents</a></li>
+                        <li><a href="#quizz">Quizz</a></li>
+                    </ul>
+                </div>
+
+        </section>
+
+        <section class="commentActua">
+            <div class="listeActualite3">
+                <div class="cube1"></div><div class="cube2"></div><div class="cube3"></div>
+            </div>
+            <p class="textPresentation">N'hésitez pas à laisser vos commentaires</p>
+        </section>
+
+    </div>
+{% endblock %}
